@@ -1,0 +1,48 @@
+{
+  "name": "@prep-chef/ui-components",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "preview": "vite preview --port 3001",
+    "dev:standalone": "python -m http.server 3002 --directory dev",
+    "design-system": "echo 'Opening design system...' && python -m http.server 3002 --directory dev",
+    "demo": "python -m http.server 3002 --directory dev",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "lucide-react": "^0.344.0"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "tailwindcss": "^3.4.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3",
+    "vite": "^5.4.2",
+    "@types/react": "^18.3.5"
+  },
+  "keywords": [
+    "react",
+    "typescript", 
+    "ui-components",
+    "kitchen-management",
+    "bolt-compatible",
+    "design-system",
+    "tailwind"
+  ],
+  "description": "Standalone UI component library for Prep Chef kitchen management - Bolt compatible"
+}
