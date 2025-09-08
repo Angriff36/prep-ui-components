@@ -19,7 +19,7 @@
     "preview": "vite preview --port 3001",
     "dev:standalone": "python -m http.server 3002 --directory dev",
     "design-system": "echo 'Opening design system...' && python -m http.server 3002 --directory dev",
-    "demo": "python -m http.server 3002 --directory dev",
+    "demo": "serve demo -l 3002",
     "type-check": "tsc --noEmit",
     "clean": "rm -rf dist"
   },
